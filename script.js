@@ -10,7 +10,7 @@ function generateHeart() {
 
     var heart = document.createElement("div");
     heart.className = "heart";
-    heart.innerHTML = `<span>${name}</span><br>&#x2764;`; // Unicode heart symbol
+    heart.innerHTML = `<span>${name}</span><br>&#x2764;`; 
 
     heartContainer.appendChild(heart);
 }
