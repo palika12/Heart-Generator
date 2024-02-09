@@ -10,7 +10,11 @@ function generateHeart() {
 
     var heart = document.createElement("div");
     heart.className = "heart";
-    heart.innerHTML = `<span>${name}</span><br>&#x2764;`; 
+    heart.innerHTML = `<span>${name}</span><br>&#x2764;`; // Unicode heart symbol
+
+    // Generate random color
+    var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    heart.style.color = randomColor;
 
     heartContainer.appendChild(heart);
 }
